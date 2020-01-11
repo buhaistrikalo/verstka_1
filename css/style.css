@@ -49,6 +49,13 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 99;
+  transition: 0.2s linear;
+  padding-bottom: 20px;
+}
+.header-active {
+  transform: translate(0, -40px);
+  background-color: #0E1D28;
 }
 .header__wrapper {
   display: flex;
@@ -395,3 +402,61 @@ header {
   transform: scale(1.05);
 }
 /* Top End */
+/* Video Start */
+.video {
+  width: 100%;
+}
+.video__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.video__scaling {
+  padding-top: 56.25%;
+  /* Хак для скелинга видосов */
+}
+.video__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Video End */
+/* Footer Start */
+.footer {
+  background: #0E1D28;
+  padding-top: 119px;
+  padding-bottom: 119px;
+}
+.footer__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__logo {
+  width: 50%;
+}
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between;
+}
+.footer__menu-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+.footer__menu-link {
+  color: white;
+  text-decoration: none;
+}
+.footer__menu-link:hover,
+.footer__menu-link:active,
+.footer__menu-link:focus {
+  opacity: 0.75;
+}
+.footer__logo-pic {
+  width: 170px;
+}
+/* Footer End */
